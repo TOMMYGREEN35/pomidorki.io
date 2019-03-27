@@ -9,4 +9,157 @@ body{
     background: url(../img/fog.jpg) top center no-repeat;
     background-size: cover;
     height: 100vh;
+    .begin {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            background: url(../img/logo.svg) top center no-repeat;
+            background-size: cover;
+            width: 210px;
+            height: 210px;
+            margin-left: 50px;
+            margin-top: 50px;
+            &:hover{
+                animation: logo ease-in-out 0.1s infinite;
+            }
+        }
+        .navigation {
+            margin-right: 100px;
+            nav{
+                ul{
+                    display: flex;
+                    li{
+                        margin-left:40px;
+                        list-style-type: none;
+                        &:hover{
+                            animation: move ease 5s infinite normal;
+                        }
+                        a{
+                            font-size: 22px;
+                            text-decoration: none;
+                            color: black;
+                            //transition: all 0.2s;
+                            &:hover {
+                                border-bottom: 3px solid black;
+                                animation: color ease-in-out 5s infinite;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .offer {
+        text-align: center;
+        margin-top: 110px;
+        h1 {
+            font-size: 65px;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        p {
+            font-size: 24px;
+            margin-top: 0;
+            padding-top: 0;
+        }  
+    }
+    .social {
+        margin-top: 160px;
+        margin-left: 10px;
+        a {
+            display: block;
+        }
+        #vk {
+            background: url(../img/vk-brands.svg) top center no-repeat;
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+        }
+        #insta {
+            background: url(../img/insta.svg) top center no-repeat;
+            background-size: contain;
+            width: 60px;
+            height: 60px;
+        }
+        #git {
+            background: url(../img/git.svg) top center no-repeat;
+            background-size: contain;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    .arrow {
+        display: flex;
+        justify-content: center;
+        .chevron
+        {
+        background: url(../img/chev.svg) top center no-repeat;
+        background-size: contain;
+        width: 60px;
+        height: 60px;
+        transition: all 0.5s;
+        cursor: pointer;
+        &:hover{
+            animation: target ease-in-out 0.5s infinite;
+        }
+        }
+    }
+
+}
+/* анимации */
+@keyframes move{
+    0% {
+        //margin-right: 5px;
+        transform: rotate(0deg);
+        color : red;
+    } 
+    50%{ 
+        transform: rotate(180deg);
+        color: pink;
+    }
+    100%{ 
+        transform: rotate(360deg);
+        color: aqua;
+    }
+}
+@keyframes color{
+    0% {
+        //margin-right: 5px;
+        
+        color : red;
+    } 
+    50%{ 
+        
+        color: pink;
+    }
+    100%{ 
+        
+        color: aqua;
+    }
+}
+@keyframes target {
+    0% {
+        width: 60px;
+        height: 60px;
+    } 
+    50%{ 
+        width: 70px;
+        height: 70px;
+    }
+    100%{ 
+        width: 80px;
+        height: 80px;
+    }
+}
+@keyframes logo {
+    0% {
+        transform: rotate(0deg);
+    } 
+    50%{ 
+        transform: rotate(180deg);
+    }
+    100%{ 
+        transform: rotate(360deg);
+    }
 }

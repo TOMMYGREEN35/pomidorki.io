@@ -1,2 +1,122 @@
+@charset "UTF-8";
 body {
-  color: red; }
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: black; }
+
+.header {
+  background: url(../img/fog.jpg) top center no-repeat;
+  background-size: cover;
+  height: 100vh; }
+  .header .begin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .begin .logo {
+      background: url(../img/logo.svg) top center no-repeat;
+      background-size: cover;
+      width: 210px;
+      height: 210px;
+      margin-left: 50px;
+      margin-top: 50px; }
+      .header .begin .logo:hover {
+        animation: logo ease-in-out 0.1s infinite; }
+    .header .begin .navigation {
+      margin-right: 100px; }
+      .header .begin .navigation nav ul {
+        display: flex; }
+        .header .begin .navigation nav ul li {
+          margin-left: 40px;
+          list-style-type: none; }
+          .header .begin .navigation nav ul li:hover {
+            animation: move ease 5s infinite normal; }
+          .header .begin .navigation nav ul li a {
+            font-size: 22px;
+            text-decoration: none;
+            color: black; }
+            .header .begin .navigation nav ul li a:hover {
+              border-bottom: 3px solid black;
+              animation: color ease-in-out 5s infinite; }
+  .header .offer {
+    text-align: center;
+    margin-top: 110px; }
+    .header .offer h1 {
+      font-size: 65px;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+    .header .offer p {
+      font-size: 24px;
+      margin-top: 0;
+      padding-top: 0; }
+  .header .social {
+    margin-top: 160px;
+    margin-left: 10px; }
+    .header .social a {
+      display: block; }
+    .header .social #vk {
+      background: url(../img/vk-brands.svg) top center no-repeat;
+      background-size: cover;
+      width: 60px;
+      height: 60px; }
+    .header .social #insta {
+      background: url(../img/insta.svg) top center no-repeat;
+      background-size: contain;
+      width: 60px;
+      height: 60px; }
+    .header .social #git {
+      background: url(../img/git.svg) top center no-repeat;
+      background-size: contain;
+      width: 60px;
+      height: 60px; }
+  .header .arrow {
+    display: flex;
+    justify-content: center; }
+    .header .arrow .chevron {
+      background: url(../img/chev.svg) top center no-repeat;
+      background-size: contain;
+      width: 60px;
+      height: 60px;
+      transition: all 0.5s;
+      cursor: pointer; }
+      .header .arrow .chevron:hover {
+        animation: target ease-in-out 0.5s infinite; }
+
+/* анимации */
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+    color: red; }
+  50% {
+    transform: rotate(180deg);
+    color: pink; }
+  100% {
+    transform: rotate(360deg);
+    color: aqua; } }
+
+@keyframes color {
+  0% {
+    color: red; }
+  50% {
+    color: pink; }
+  100% {
+    color: aqua; } }
+
+@keyframes target {
+  0% {
+    width: 60px;
+    height: 60px; }
+  50% {
+    width: 70px;
+    height: 70px; }
+  100% {
+    width: 80px;
+    height: 80px; } }
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
