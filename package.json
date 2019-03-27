@@ -1,0 +1,16 @@
+{
+  "name": "gulp-project",
+  "version": "1.0.0",
+  "description": "First Gulp Project",
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1",
+    "node-bourbon": "^4.2.8"
+  }
+}
